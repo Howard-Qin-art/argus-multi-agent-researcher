@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "argus-multi-agent-researcher"
+version = "0.1.0"
+description = "Argus · 多智能体协同深度研究系统：Supervisor 规划 / Researcher 取证 / Critic 审查 / Writer 成文"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Argus" }]
+keywords = ["agent", "multi-agent", "langgraph", "research", "llm"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "langgraph>=0.2.0",
+    "langchain-core>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "pydantic>=2.7.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.7.0",
+    "ddgs>=5.0.0",
+]
+
+[project.optional-dependencies]
+rag = ["faiss-cpu>=1.8.0", "tiktoken>=0.7.0"]
+serve = ["fastapi>=0.110.0", "uvicorn>=0.30.0", "streamlit>=1.35.0"]
+trace = ["langsmith>=0.1.0"]
+dev = ["pytest>=8.0.0", "pytest-asyncio>=0.23.0"]
+
+[project.scripts]
+argus = "src.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

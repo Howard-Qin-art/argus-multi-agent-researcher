@@ -1,0 +1,16 @@
+# 统一换行符：仓库内一律 LF，工作区按平台转换
+* text=auto eol=lf
+
+# 二进制文件不做任何转换
+*.png binary
+*.jpg binary
+*.ico binary
+
+# 文档与脚本按文本处理，保证跨平台 diff 可读
+*.md text
+*.py text
+*.toml text
+*.txt text
+*.jsonl text
+Dockerfile text
+.gitignore text

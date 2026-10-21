@@ -1,0 +1,34 @@
+# 运行环境
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# 密钥
+.env
+
+# 运行期产物（不应进仓库）
+traces/
+reports/
+.memory/
+*.jsonl
+
+# 例外：评测数据集是资产，必须进仓库
+!eval/datasets/*.jsonl
+
+# 测试与静态检查
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+*.log
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

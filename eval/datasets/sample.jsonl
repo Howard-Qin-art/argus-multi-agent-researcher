@@ -1,0 +1,6 @@
+{"question": "多智能体系统在工程落地上的主要难点有哪些", "must_include": ["技术路线", "可控性", "风险"], "reference_objects": ["分点列出落地难点并给出取舍建议的 Markdown 研究报告"]}
+{"question": "如何为 LLM 应用设计一套可复用的评测体系", "must_include": ["评测", "口径", "数据"], "reference_objects": ["包含评测维度、指标口径与数据要求的报告"]}
+{"question": "端到端与分阶段两种 Agent 架构路线该如何取舍", "must_include": ["端到端", "分阶段", "取舍"], "reference_objects": ["对比两种路线并给出适用场景的报告"]}
+{"question": "Agent 的工具调用链路为什么需要护栏与预算约束", "must_include": ["可控性", "风险", "待验证"], "reference_objects": ["带 [n] 引用标记的结论摘要与风险小节"]}
+{"question": "面向生产的 LLM 系统如何平衡可控性与生成效果", "must_include": ["平衡", "可控性", "效果"], "reference_objects": ["给出可量化权衡指标的工程建议报告"]}
+{"question": "多智能体协作中的 Critic 返工机制能否降低结论失控的风险", "must_include": ["结论", "风险", "评测"], "reference_objects": ["说明返工机制收益与代价的评估结论"]}
