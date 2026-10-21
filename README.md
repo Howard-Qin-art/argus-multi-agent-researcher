@@ -69,6 +69,13 @@ Agent 开发岗真正考察的是"**如何让一个会犯错的系统稳定运�
 
 ## 三、快速开始
 
+### 获取代码
+
+```bash
+git clone https://github.com/Howard-Qin-art/argus-multi-agent-researcher.git
+cd argus-multi-agent-researcher
+```
+
 ### 安装
 
 ```bash
